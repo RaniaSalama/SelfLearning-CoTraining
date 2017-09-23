@@ -1,0 +1,5 @@
+To run co-training:
+java -jar -Xms2500m CoTraining.jar [trainFile-Side1] [testFile-Side1] [labelFile-Side1] [unlabeledFile-Side1] [trainFile-Side2] [testFile-Side2] [labelFile-Side2] [unlabeledFile-Side2] [MappingFile] [Alpha] [ClassifierType(randomforest,svm)] [resultFile] [ClassifierModelFileSide1] [ClassifierModelFileSide2]
+
+java -jar -Xms2500m CoTraining.jar train-side1.txt test-side1.txt labels-side1.txt unlabeled-side1.txt train-side2.txt test-side2.txt labels-side2.txt unlabeled-side2.txt geneMiRNAs.txt 0.5 randomforest randomforest-result.txt randomforest-classifierSide1.txt randomforest-classifierSide2.txt
+java -jar -Xms2500m CoTraining.jar train-side1.txt test-side1.txt labels-side1.txt unlabeled-side1.txt train-side2.txt test-side2.txt labels-side2.txt unlabeled-side2.txt geneMiRNAs.txt 0.5 svm svm-result.txt svm-classifierSide1.txt svm-classifierSide2.txt

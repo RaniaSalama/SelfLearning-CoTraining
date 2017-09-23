@@ -1,0 +1,7 @@
+java -jar -Xms1700m SelfLearner.jar train.txt test.txt labels.txt unlabeled-normalized.txt 0.5 randomforest randomforest-result.txt randomforest-classifierModel.txt
+java -jar -Xms1700m SelfLearner.jar train.txt test.txt labels.txt unlabeled-normalized.txt 0.5 svm svm-result.txt svm-classifierModel.txt
+
+Where train.txt and test.txt is the gene expressions experiment for breast cancer samples downloaded from GSE20713 
+unlabeled.txt is the gene expressions experiment for breast cancer samples downloaded from GSE16179 
+and unlabeled-normalized.txt is unlabeled.txt after applying log2-transformation on the expression values.
+
